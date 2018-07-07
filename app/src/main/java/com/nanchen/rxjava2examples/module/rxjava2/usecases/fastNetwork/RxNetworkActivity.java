@@ -36,7 +36,7 @@ public class RxNetworkActivity extends RxOperatorBaseActivity {
     @Override
     protected void doSomething() {
         mRxOperatorsText.append("RxNetworkActivity\n");
-        Rx2AndroidNetworking.get("http://api.avatardata.cn/MobilePlace/LookUp?key=ec47b85086be4dc8b5d941f5abd37a4e&mobileNumber=13021671512")
+        Rx2AndroidNetworking.get("http://api.avatardata.cn/MobilePlace/LookUp?key=29f96b578bb04f23b44d20e6a012568f&mobileNumber=13021671512")
                 .build()
                 .getObjectObservable(MobileAddress.class)
                 .observeOn(AndroidSchedulers.mainThread()) // 为doOnNext() 指定在主线程，否则报错
